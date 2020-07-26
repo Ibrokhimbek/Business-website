@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar {
+    background-color: rgb(17, 16, 16);
+}
+
+.navbar-toggler {
+    color: white;
+    padding: 10px !important;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 400 !important;
+    padding: 2.2rem 1.5rem !important;
+}
+
+.nav-link:hover,
+.active {
+    background-color: #ff3f40;
+    color: white;
+}
+
+.navbar-toggler {
+    background-color: #ff3f40;
+    border: none !important;
+    outline: none !important;
+}
+
+#section1 {
+    margin-top: 7rem;
+}
+
+#section1 h1 {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: 800;
+}
+
+filter: drop-shadow(-2.19px -13.828px 36.5px rgba(0, 0, 0, 0.29));
+
+@media (max-width:768px) {
+    .nav-link {
+        font-size: 0.9rem;
+        padding: 1.2rem 1rem !important;
+    }
+
+    #section1 {
+        margin-top: 20px;
+    }
+
+    #section1 h1 {
+        font-size: 0rem !important;
+        letter-spacing: 0 !important;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    #section1 {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width:992px) {
+    
+}
