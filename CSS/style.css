@@ -107,6 +107,7 @@ body {
     font-weight: 700;
     transition: all 0.5s ease;
     border: 1px solid white;
+    cursor: pointer;
 }
 
 .primary-btn:hover {
