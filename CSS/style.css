@@ -9,6 +9,8 @@ body {
 *,
 *::before,
 *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
 .MyContainer {
@@ -16,7 +18,8 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
-.MyRow {
+.section_row {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -47,7 +50,6 @@ body {
 }
 .section__1 {
     padding-top: 28px;
-    height: 100vh;
 }
 .section__1__box {
     padding: 150px 0;
@@ -82,7 +84,7 @@ body {
     margin-top: 22px;
 }
 .primary-btn {
-    font-size: 13px;
+    font-size: 18px;
     padding: 12px 45px;
     border-radius: 5px;
     background-color: #ff3f40;
@@ -101,12 +103,103 @@ body {
     width: 50%;
     text-align: right;
 }
-@media (max-width: 1150px) {
+.section__1__box .video video {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+}
+/* Section 2 */
+.header_2 {
+    padding-bottom: 100px;
+}
+.section_2_left {
+    width: 50%;
+}
+.section_2_left h2 {
+    width: 85%;
+    text-transform: uppercase;
+    line-height: 55px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.section_2_left p {
+    font-size: 16px;
+    width: 85%;
+    padding-bottom: 20px;
+    line-height: 28px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.section_2_left .secondary-btn {
+    letter-spacing: 0px;
+    line-height: 34px;
+    color: #ff2d2d !important;
+    border: 1px solid #ff2d2d;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 12px 45px;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+.section_2_left .secondary-btn:hover {
+    color: white !important;
+    background-color: #ff2d2d;
+}
+.section_2_right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section_2_right .box {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.section_2_right .box:nth-child(3), .box:nth-child(4) {
+    margin-top: 40px;
+}
+.section_2_right .box svg {
+    color: #ff2d2d;
+    margin-bottom: 30px;
+}
+.section_2_right .box h2 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.section_2_right .box p {
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    width: 100%;
+}
+@media (max-width: 767px) {
+    /* SECTION 1 */
+    .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700 !important;
+    padding: 20px 15px !important;
+    }
     .section__1__box {
-        padding: 80px 0;
+        padding: 40px 0;
+    }
+    .section__1__box .content {
+        width: 100%;
+        align-items: center;
     }
     .section__1__box .content h1 {
-        font-size: 40px;
+        font-size: 30px;
+        text-align: center;
         letter-spacing: normal;
     }
     .letter_space {
@@ -114,22 +207,158 @@ body {
     }
     .section__1__box .content p {
         font-size: 10px;
-        width: 60%;
+        width: 80%;
+        text-align: center;
     }
     .section__1__box .content .primary-btn {
         font-size: 13px;
         padding: 6px 22px;
         margin-top: 0;
         font-weight: 400;
+        margin: 0 auto;
+    }
+    .section__1__box .video {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .section__1__box .video video {
+        width: 100%;
+        height: 100%;
+    }
+    /* Section 2 */
+    .header_2 {
+        padding-bottom: 100px;
+    }
+    .section_2_left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_2_left h2 {
+        width: 100%;
+        line-height: 30px;
+        font-size: 28px;
+        text-transform: none;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .section_2_left p {
+        font-size: 14px;
+        width: 95%;
+        padding-bottom: 20px;
+        line-height: 20px;
+        text-align: justify;
+        margin: 0 auto;
+    }
+    .section_2_left .secondary-btn {
+        font-size: 13px;
+        padding: 6px 22px;
+        margin: 0 auto;
+        line-height: 18px;
+    }
+    .section_2_right {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section_2_right .box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_2_right .box:nth-child(3), .box:nth-child(4) {
+        margin-top: 0px;
+    }
+    .section_2_right .box:first-child {
+        margin-top: 40px;
+    }
+    .section_2_right .box svg {
+        margin-bottom: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    .section_2_right .box p {
+        text-align: justify;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* SECTION 1 */
+    .section__1__box {
+        padding: 80px 0;
+    }
+    .section__1__box .content h1 {
+        font-size: 45px;
+        letter-spacing: normal;
+    }
+    .letter_space {
+        letter-spacing: 0px;
+    }
+    .section__1__box .content p {
+        font-size: 14px;
+        width: 85%;
+    }
+    .section__1__box .content .primary-btn {
+        font-size: 15px;
+        padding: 10px 40px;
+        margin-top: 0;
     }
     .section__1__box .video {
         width: 50%;
     }
     .section__1__box .video video {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 100%;
     }
-}
-@media (max-width:767px) {
-
+    /* Section 2 */
+    .header_2 {
+        padding-bottom: 100px;
+    }
+    .section_2_left {
+        width: 50%;
+    }
+    .section_2_left h2 {
+        font-size: 36px;
+        padding-bottom: 10px;
+        width: 90%;
+    }
+    .section_2_left p {
+        font-size: 14px;
+        width: 75%;
+    }
+    .section_2_left .secondary-btn {
+        font-size: 15px;
+        padding: 10px 40px;
+    }
+    .section_2_right {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section_2_right .box {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    .section_2_right .box svg {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+    .section_2_right .box h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .section_2_right .box p {
+        font-size: 13px;
+        text-align: justify;
+        line-height: 20px;
+        width: 100%;
+    }
 }
