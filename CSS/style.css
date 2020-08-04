@@ -16,6 +16,10 @@ body {
     box-sizing: inherit;
 }
 
+*:focus {
+    outline: none;
+}
+
 .MyContainer {
     max-width: 1250px;
     margin: 0 auto;
@@ -397,6 +401,92 @@ body {
     width: 24%;
     filter: drop-shadow(-2.19px -13.828px 36.5px rgba(0, 0, 0, 0.29));
 }
+/* Section 7 */
+.header_7 {
+    width: 100%;
+    height: 514px;
+    background-image: url(../images/office.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 106px;
+}
+.header_7::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003d;
+    z-index: 1;
+}
+.section_7 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_7 h2 {
+    font-size: 42px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 140px;
+    z-index: 1;
+}
+.section_7 p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    z-index: 1;
+    margin-top: 30px;
+}
+.section_7 form {
+    width: 80%;
+    z-index: 1;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.section_7 form .input_text {
+    width: 65%;
+    height: 79px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: bold;
+}
+.section_7 form .form-btn {
+    width: 25%;
+    height: 79px;
+    border-radius: 5px;
+    background-color: #ff2d2d;
+    color: white !important;
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 700;
+    border: none;
+    transition: all .5s;
+}
+
+.section_7 form .form-btn:hover {
+    background-color: #a80a0a;
+    color: white;
+}
 @media (max-width: 767px) {
     
     /* SECTION 1 */
@@ -619,6 +709,50 @@ body {
         width: 49%;
         margin-bottom: 5px;
     }
+    /* Section 7 */
+    .header_7 {
+        margin-bottom: 53px;
+    }
+    .section_7 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section_7 h2 {
+        font-size: 22px;
+        line-height: 26px;
+        margin-top: 80px;
+    }
+    .section_7 p {
+        display: none;
+    }
+    .section_7 form {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section_7 form .input_text {
+        width: 95%;
+        height: 50px;
+        border-radius: 3px;
+        padding: 5px 8px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .section_7 form .form-btn {
+        width: 55%;
+        height: 40px;
+        border-radius: 3px;
+        font-size: 12px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -815,5 +949,49 @@ body {
     }
     .section_6_content ul li {
         display: none;
+    }
+    /* Section 7 */
+    .header_7 {
+        margin-bottom: 80px;
+    }
+    .section_7 h2 {
+        font-size: 32px;
+        line-height: 30px;
+        color: #ffffff;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 110px;
+        z-index: 1;
+    }
+    .section_7 p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .section_7 form {
+        width: 70%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .section_7 form .input_text {
+        width: 95%;
+        height: 69px;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .section_7 form .form-btn {
+        width: 40%;
+        height: 59px;
+        font-size: 18px;
+        line-height: 34px;
+        font-weight: 700;
+        border: none;
+        transition: all .5s;
+        margin-top: 20px;
+        letter-spacing: 2px;
     }
 }
