@@ -515,7 +515,7 @@ body {
   margin-top: auto;
 }
 
-.section_6_content .img-boxes img {
+.section_6_content .img-boxes .img-boxes_block {
   width: 24%;
   -webkit-filter: drop-shadow(-2.19px -13.828px 36.5px rgba(0, 0, 0, 0.29));
   filter: drop-shadow(-2.19px -13.828px 36.5px rgba(0, 0, 0, 0.29));
@@ -1062,7 +1062,7 @@ body {
   .section_6_content ul {
     display: none;
   }
-  .section_6_content .img-boxes img {
+  .section_6_content .img-boxes .img-boxes_block {
     width: 49%;
     margin-bottom: 5px;
   }
